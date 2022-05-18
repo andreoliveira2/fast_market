@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Por padrão o sistema já traz 16px como padrão
+O uso do -- é para criar uma variável de algo que vou usar
+com bastante frequência. Criei uma variável para a color*/
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.25vw;
+  color: var(--color-copy);
+}
+
+@media screen and (min-width: 720px) {
+  :root {
+    font-size: 2.25vw;
+  }
+} 
+
+@media screen and (min-width: 1280px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  overflow-x: hidden;
+}
+
+/* Flex faz com que os itens fiquem uma ao lado do 
+outro e no display none tira a marcação da frente*/
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.logo-studion {
+  font-size: 2.375rem;
+  font-weight: 900;
+  line-height: 1ch;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.logo-studion__subtitle {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.logo-studion a {
+  text-decoration: none;
+  color: white;
+}

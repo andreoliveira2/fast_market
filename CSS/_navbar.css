@@ -1,0 +1,104 @@
+.navbar {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+.navbar__container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  align-items: center;
+
+  width: 70vw;
+  height: 7.75rem;
+  padding: 0 1rem;
+}
+
+
+
+/* O justify-self:end é uma propriedade de alinhamento para itens que estejam dentro
+de um grid. Como o logo do Studion e o meu estão em um grid eu tenho essa possibilidade*/
+.navbar__links {
+  display: none;
+  justify-self: end;
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar__links {
+    display: flex;
+  }  
+}
+
+.navbar__links.active {
+  display: grid;
+  place-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 3rem 2rem;
+
+  background: #000e;
+} 
+
+/* 1 rem por padrão é 16px. Toda as vezes que eu tiver um tamanho em px, basta eu dividir esse tamanho
+por 16 e vou ter o tamanho em rem. No caso abaixo a fonte tinha 14px, entao foi dividido o 14 por 16 e deu o valor em rem*/
+.navbar__links li {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar__links li {
+    font-size: 0.875rem;
+    margin-right: 3rem;
+  }  
+}
+
+.navbar__links a {
+  font-weight: 300;
+  color:#000;
+  text-decoration: none;
+}
+
+.navbar__links a.active {
+  color: var(--color-primary);
+}
+
+/* O uso do hover é para alterar a cor quando se passa o mouse por cima. Como estou trabalhando com 
+os links e o "a" para referenciar um caminho*/
+.navbar__links a:hover {
+  color: var(--color-primary);
+}
+
+.navbar__menu-btn {
+  cursor: pointer;
+
+  position: relative;
+  z-index: 10;
+
+  font-size: 2rem;
+  width: fit-content;
+  color: #fff;
+  background: unset;
+  border: unset;
+  
+  justify-self: end;
+  align-self: start;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .navbar__menu-btn {
+    display: none;
+  }
+  
+}

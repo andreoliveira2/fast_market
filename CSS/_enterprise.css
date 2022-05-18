@@ -1,0 +1,78 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.enterprise {
+  display: grid;
+  grid-template-columns: 55vh 45vh;
+  gap: 3.125rem;
+  padding: 1.06rem 0 0 4rem;
+}
+
+.enterprise__copy {
+  border: 0;
+  color: var(--color-copy);
+}
+
+.enterprise__copy h4 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 1.9375rem;
+  font-family: "Montserrat";
+}
+
+.enterprise__copy p {
+  border: 0;
+  font-size: 1rem;
+  line-height: 1.6875rem;
+}
+
+.enterprise__image {
+  max-height: 515px;
+  object-position: bottom;
+}
+
+.brands {
+  background-color: var(--color-primary);
+  background-attachment: fixed;
+  color: var(--color-copy);
+}
+
+.brands__container {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  min-height: 80vh;
+  padding: 6.25rem 0;
+}
+
+.brands h2 {
+  margin: 0;
+  font-size: 1.5625rem;
+  line-height: 1.9375rem;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  padding: 3.5rem 0 0 0;
+}
+
+.brands__image {
+  padding: 6.25rem 1.75rem;
+}
+
+.movie {
+  display: grid;
+  align-items: center;
+}
+
+.display__movie {
+  max-width: 63.125rem;
+  padding: 5rem 3.75rem;
+}
+
+.fa-youtube {
+  z-index: auto;
+  object-position: center;
+  align-items: center;
+}
